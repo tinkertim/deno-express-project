@@ -31,5 +31,5 @@ app.get("/users/:id", (req: Request, res: Response): void => {
 });
 
 app.listen(port, () => {
-    console.log(`Listening on ${ port } ...`);
+  console.log(`Listening on ${port} ...`);
 });
