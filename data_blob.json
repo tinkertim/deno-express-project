@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Sara",
+      "department": "Engineering"
+    },
+    {
+      "id": 2,
+      "name": "Funmi",
+      "department": "Sales"
+    },
+    {
+      "id": 3,
+      "name": "David",
+      "department": "Marketing"
+    },
+    {
+      "id": 4,
+      "name": "Dante",
+      "department": "Research"
+    }
+  ]
+}
