@@ -1,5 +1,5 @@
 // @deno-types="npm:@types/express@4"
-import express, { NextFunction, Request, Response } from "npm:express";
+import express, { NextFunction, Request, Response } from "npm:express@4.18.2";
 import demoData from "./data_blob.json" assert { type: "json" };
 
 const app = express();
