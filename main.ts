@@ -22,6 +22,7 @@ app.get("/users/:id", (req, res) => {
     const haystack = demoData.users[needle];
     if (haystack.id === idx) {
       res.status(200).json(haystack);
+      return;
     }
   }
   res.status(400).json({ msg: "User not found" });
