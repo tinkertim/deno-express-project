@@ -18,10 +18,9 @@ app.get("/users", (_req, res) => {
 
 app.get("/users/:id", (req, res) => {
   const idx = Number(req.params.id);
-  for (const needle in demoData.users) {
-    const haystack = demoData.users[needle];
-    if (haystack.id === idx) {
-      res.status(200).json(haystack);
+  for (const user of demoData.users) {
+    if (user.id === idx) {
+      res.status(200).json(user);
     }
   }
   res.status(400).json({ msg: "User not found" });
