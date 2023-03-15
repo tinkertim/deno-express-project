@@ -5,7 +5,7 @@ import demoData from "./data_blob.json" assert { type: "json" };
 const app = express();
 const port = Number(Deno.env.get("PORT")) || 3000;
 
-const reqLogger = function (req, _res, next) {
+const reqLogger = function (req: Request, _res: Response, next: NextFunction) {
   console.info(`${req.method} request to "${req.url}" by ${req.hostname}`);
   next();
 };
