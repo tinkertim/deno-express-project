@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+    deno:
+        container_name: deno
+        image: deno
+        restart: always
+        build:
+            context: .
+            dockerfile: Dockerfile
+            target: base
+        ports:
+            - "${PORT}:${PORT}"
