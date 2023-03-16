@@ -1,9 +1,9 @@
-const stagingUrl = Deno.env.get("STAGING_URL") || "http://localhost:3000/";
+const stagingUrl = Deno.env.get("STAGING_URL") || "http://localhost:3000";
 
-Deno.bench(function requestUser() {
-  new URL(`${stagingUrl}/users/2`);
+Deno.bench("Single User", async () => {
+  await fetch(`${stagingUrl}/users/2`);
 });
 
-Deno.bench(function requestAllUsers() {
-  new URL(`${stagingUrl}/users`);
+Deno.bench("All Users", async () => {
+  await fetch(`${stagingUrl}/users`);
 });
