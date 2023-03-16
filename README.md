@@ -20,7 +20,9 @@ To generate and run a Docker image, use:
 docker compose up --build
 ```
 
-You can then deploy to a wide variety of hosts that support Docker.
+You can then deploy to a wide variety of hosts that support Docker. As
+configured, it'll just do a 1:1 copy of what's in the repository - tweak to your
+needs.
 
 ## Running Tests & Benchmarks
 
@@ -40,3 +42,6 @@ deno bench -A
 ... respectively. See [the Deno manual](https://deno.land/manual) for more
 information on even more features in Deno's built-in test runner and benchmark
 tool.
+
+Finally, if you get stuck, head to Deno's
+[Discord server](https://discord.gg/deno) and someone will lend a hand.
