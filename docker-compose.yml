@@ -1,8 +1,8 @@
 version: "3.9"
 
 services:
-    deno:
-        container_name: deno
+    deno-express-api:
+        container_name: deno-express-api
         image: deno
         restart: always
         build:
