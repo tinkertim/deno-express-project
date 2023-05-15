@@ -18,7 +18,13 @@ To generate and run a Docker image, use:
 
 ```sh
 docker compose up --build
+
 ```
+
+**Note: By default, the Docker image is not configured to start on boot or restart automatically.**
+
+This is to avoid a demo automatically starting when your computer restarts. Edit the Docker config
+file if you want to modify this. 
 
 You can then deploy to a wide variety of hosts that support Docker. As
 configured, it'll just do a 1:1 copy of what's in the repository - tweak to your

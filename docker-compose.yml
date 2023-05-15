@@ -4,7 +4,7 @@ services:
     deno-express-api:
         container_name: deno-express-api
         image: deno
-        restart: always
+        restart: never
         build:
             context: .
             dockerfile: Dockerfile
