@@ -45,9 +45,8 @@ deno test -A
 deno bench -A
 ```
 
-... respectively. See [the Deno manual](https://deno.land/manual) for more
-information on even more features in Deno's built-in test runner and benchmark
-tool.
+See [the Deno manual](https://deno.land/manual) for more information on even more 
+features in Deno's built-in test runner and benchmark tool.
 
 Finally, if you get stuck, head to Deno's
 [Discord server](https://discord.gg/deno) and someone will lend a hand.
